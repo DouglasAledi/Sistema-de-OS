@@ -1,0 +1,62 @@
+[
+    {
+        "data_hora": "14\/06\/2026 22:09:12",
+        "acao": "EXCLUIR",
+        "servico_id": 3,
+        "detalhes": "O serviço 'asd' do cliente 'asd' foi excluído permanentemente."
+    },
+    {
+        "data_hora": "14\/06\/2026 22:09:09",
+        "acao": "EXCLUIR",
+        "servico_id": 2,
+        "detalhes": "O serviço 'a' do cliente 'a' foi excluído permanentemente."
+    },
+    {
+        "data_hora": "14\/06\/2026 22:05:16",
+        "acao": "EXCLUIR",
+        "servico_id": 1,
+        "detalhes": "O serviço 'Engenharia De Software - Bacharelado - 4º Semestre' do cliente 'aaaaaaaaaaaaa' foi excluído permanentemente."
+    },
+    {
+        "data_hora": "14\/06\/2026 22:02:56",
+        "acao": "EXCLUIR",
+        "servico_id": 1,
+        "detalhes": "O serviço 'Engenharia De Software - Bacharelado - 4º Semestre' do cliente 'aaaaaaaaaaaaa' foi excluído permanentemente."
+    },
+    {
+        "data_hora": "14\/06\/2026 21:54:08",
+        "acao": "EXCLUIR",
+        "servico_id": 1,
+        "detalhes": "O serviço 'Engenharia De Software - Bacharelado - 4º Semestre' do cliente 'aaaaaaaaaaaaa' foi excluído permanentemente."
+    },
+    {
+        "data_hora": "14\/06\/2026 21:53:51",
+        "acao": "EXCLUIR",
+        "servico_id": 1,
+        "detalhes": "O serviço 'Engenharia De Software - Bacharelado - 4º Semestre' do cliente 'aaaaaaaaaaaaa' foi excluído permanentemente."
+    },
+    {
+        "data_hora": "14\/06\/2026 21:45:03",
+        "acao": "EXCLUIR",
+        "servico_id": 1,
+        "detalhes": "O serviço 'Engenharia De Software - Bacharelado - 4º Semestre' do cliente 'aaaaaaaaaaaaa' foi excluído permanentemente."
+    },
+    {
+        "data_hora": "14\/06\/2026 21:37:49",
+        "acao": "EXCLUIR",
+        "servico_id": 1,
+        "detalhes": "O serviço 'Engenharia De Software - Bacharelado - 4º Semestre' do cliente 'aaaaaaaaaaaaa' foi excluído permanentemente."
+    },
+    {
+        "data_hora": "14\/06\/2026 21:20:01",
+        "acao": "CRIAR",
+        "servico_id": 3,
+        "detalhes": "Serviço criado com o título: 'asd' para o cliente: 'asd'."
+    },
+    {
+        "data_hora": "14\/06\/2026 21:18:15",
+        "acao": "CRIAR",
+        "servico_id": 2,
+        "detalhes": "Serviço criado com o título: 'a' para o cliente: 'a'."
+    }
+]
