@@ -1,0 +1,12 @@
+:root{
+    --cor-branca: #fff;
+}
+
+.conteudo_tela_exclusao 
+{ 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+

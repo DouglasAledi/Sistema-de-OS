@@ -1,6 +1,6 @@
-:root{
-        --cor-branca: #ffff;
-}
+        :root{
+                --cor-branca: #ffff;
+        }
 
         body { 
                 font-family: sans-serif; margin: 40px; background-color: var(--cor-branca); text-align: center; padding-top: 50px; 
