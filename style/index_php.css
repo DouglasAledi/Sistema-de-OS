@@ -13,13 +13,12 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            background-color: var(--cor-branca); /* Cinza claro idêntico ao fundo do protótipo */
+            background-color: var(--cor-branca); 
             color: var(--cor-cinza); 
         }
         
-        /* Barra de Navegação Superior Completa */
         nav {
-            background-color: var(--cor-azul-escuro); /* Azul escuro/fechado da imagem original */
+            background-color: var(--cor-azul-escuro); 
             padding: 0 40px; 
             display: flex;
             justify-content: space-between;
@@ -56,7 +55,7 @@
         }
 
         nav ul li a {
-            color: var(--cor-azul-claro); /* Azul claro para links secundários */
+            color: var(--cor-azul-claro); 
             text-decoration: none;
             font-size: 14px;
             font-weight: 500;
@@ -69,11 +68,10 @@
 
         nav ul li a:hover, nav ul li a.ativo {
             color: var(--cor-branca);
-            background-color: var(--cor-azul-escuro-background); /* Destaque sutil ao passar o mouse */
-            border-bottom: 3px solid var(--cor-azul-claro-linha); /* Linha azul de item ativo */
+            background-color: var(--cor-azul-escuro-background); 
+            border-bottom: 3px solid var(--cor-azul-claro-linha); 
         }
 
-        /* Lado direito do Nav (Usuário) */
         .nav-usuario {
             display: flex;
             align-items: center;
@@ -90,7 +88,6 @@
             border: 2px solid var(--cor-azul-claro);
         }
 
-        /* Container Principal do Dashboard (Flexbox centralizado) */
         .painel-container { 
             display: flex; 
             gap: 25px; 
@@ -100,7 +97,6 @@
             align-items: flex-start; 
         }
         
-        /* Coluna da Esquerda (Cards Brancos com ícones na maquete) */
         .coluna-esquerda { 
             width: 280px; 
             display: flex; 
@@ -109,7 +105,6 @@
             flex-shrink: 0; 
         }
         
-        /* Modificando os cards para ficarem brancos e limpos como na primeira imagem */
         .card-lateral { 
             background-color: var(--cor-branca); 
             color: var(--cor-azul-escuro); 
@@ -156,7 +151,6 @@
             padding-top: 8px;
         }
 
-        /* Coluna da Direita (Tabela Branca) */
         .coluna-direita { 
             flex: 1; 
             background: var(--cor-branca); 
@@ -166,17 +160,34 @@
             border: 1px solid var(--cor-branca);
         }
 
-        h1 { font-size: 24px; color: #111827; margin-bottom: 2px; }
-        h2 { font-size: 14px; color: #6b7280; font-weight: normal; margin-bottom: 25px; }
+        h1 { 
+            font-size: 24px; color: #111827; margin-bottom: 2px; 
+        }
         
-        /* Estilos da Tabela */
-        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-        th, td { padding: 14px 16px; text-align: left; font-size: 14px; }
-        th { background-color: var(--cor-branca-papel); color: #374151; font-weight: 600; border-bottom: 2px solid var(--cor-branca-papel); }
-        td { border-bottom: 1px solid var(--cor-branca-papel); color: #4b5563; }
-        tr:hover td { background-color: var(--cor-branca-papel); }
+        h2 { 
+            font-size: 14px; color: #6b7280; font-weight: normal; margin-bottom: 25px; 
+        }
         
-        /* Botão Novo Serviço */
+        table { 
+            width: 100%; border-collapse: collapse; margin-top: 15px; 
+        }
+
+        th, td { 
+            padding: 14px 16px; text-align: left; font-size: 14px; 
+        }
+        
+        th { 
+            background-color: var(--cor-branca-papel); color: #374151; font-weight: 600; border-bottom: 2px solid var(--cor-branca-papel); 
+        }
+
+        td { 
+            border-bottom: 1px solid var(--cor-branca-papel); color: #4b5563; 
+        }
+
+        tr:hover td { 
+            background-color: var(--cor-branca-papel); 
+        }
+        
         .btn-novo {
             background-color: #2563eb; 
             color: var(--cor-branca); 
@@ -188,13 +199,26 @@
             font-size: 13px;
             transition: background 0.2s;
         }
-        .btn-novo:hover { background-color: var(--cor-azul-escuro-background); }
+        .btn-novo:hover { 
+            background-color: var(--cor-azul-escuro-background); 
+        }
 
-        /* Links de Ações */
-        .acao-link { text-decoration: none; font-weight: 600; font-size: 13px; margin-right: 12px; }
+        .acao-link { 
+            text-decoration: none; font-weight: 600; font-size: 13px; margin-right: 12px; 
+        }
 
-        /* Badges de Status arredondadas da Maquete */
-        .laranja { background-color: #fef3c7; color: #d97706; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 500; }
-        .amarelo { background-color: #e0f2fe; color: #0284c7; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 500; }
-        .verde   { background-color: #dcfce7; color: #16a34a; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 500; }
-        .vermelho { background-color: #fee2e2; color: #dc2626; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 500; }
+        .laranja { 
+            background-color: #fef3c7; color: #d97706; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 500; 
+        }
+
+        .amarelo { 
+            background-color: #e0f2fe; color: #0284c7; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 500; 
+        }
+
+        .verde   { 
+            background-color: #dcfce7; color: #16a34a; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 500; 
+        }
+
+        .vermelho { 
+            background-color: #fee2e2; color: #dc2626; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 500; 
+        }
