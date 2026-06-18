@@ -51,7 +51,7 @@
     <div class="form-box">
         <h2>Editar Serviço #<?php echo $servicoEncontrado['id']; ?></h2>
         
-        <form action="atualizar_registro.php" method="POST">
+        <form action="../model/atualizar_registro.php" method="POST">
             
             <input type="hidden" name="id" value="<?php echo $servicoEncontrado['id']; ?>">
 

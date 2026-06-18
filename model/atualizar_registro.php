@@ -30,7 +30,7 @@
         }
     }
     $jsonSalvo = json_encode($listaRegistro, JSON_PRETTY_PRINT);
-    file_put_contents("registros.json", $jsonSalvo);
-    header("Location: index.php");
+    file_put_contents("../controller/registros.json", $jsonSalvo);
+    header("Location: ../view/index.php");
     exit;
 ?>
