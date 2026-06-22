@@ -1,5 +1,53 @@
 [
     {
+        "data_hora": "20\/06\/2026 01:31:06",
+        "acao": "CRIAR",
+        "servico_id": 2,
+        "detalhes": "Serviço criado com o título: 'x' para o cliente: 'c'."
+    },
+    {
+        "data_hora": "20\/06\/2026 01:09:25",
+        "acao": "CRIAR",
+        "servico_id": 1,
+        "detalhes": "Serviço criado com o título: 'aaa' para o cliente: 'aaa'."
+    },
+    {
+        "data_hora": "20\/06\/2026 01:09:15",
+        "acao": "EXCLUIR",
+        "servico_id": 1,
+        "detalhes": "O serviço 'a' do cliente 'a' foi excluído permanentemente."
+    },
+    {
+        "data_hora": "20\/06\/2026 00:50:31",
+        "acao": "CRIAR",
+        "servico_id": 1,
+        "detalhes": "Serviço criado com o título: 'a' para o cliente: 'a'."
+    },
+    {
+        "data_hora": "20\/06\/2026 00:50:24",
+        "acao": "EXCLUIR",
+        "servico_id": 2,
+        "detalhes": "O serviço 's' do cliente 's' foi excluído permanentemente."
+    },
+    {
+        "data_hora": "20\/06\/2026 00:49:30",
+        "acao": "EXCLUIR",
+        "servico_id": 1,
+        "detalhes": "O serviço 'aaaa' do cliente 'aaaa' foi excluído permanentemente."
+    },
+    {
+        "data_hora": "20\/06\/2026 00:49:24",
+        "acao": "EDITAR",
+        "servico_id": 1,
+        "detalhes": "O serviço foi editado. Novo título: 'aaaa' | Cliente: aaaa'."
+    },
+    {
+        "data_hora": "20\/06\/2026 00:49:14",
+        "acao": "CRIAR",
+        "servico_id": 2,
+        "detalhes": "Serviço criado com o título: 's' para o cliente: 's'."
+    },
+    {
         "data_hora": "19\/06\/2026 00:13:13",
         "acao": "EDITAR",
         "servico_id": 1,

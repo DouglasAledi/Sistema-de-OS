@@ -1,12 +1,20 @@
-:root{
-    --cor-branca: #fff;
+body{
+    background-color: #dfdfdf;
+    padding: 20px;
 }
 
-.conteudo_tela_exclusao 
-{ 
+.conteudo_tela_exclusao{ 
+    background-color: #fff;
+
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 5px;
+
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 

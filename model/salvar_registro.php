@@ -17,7 +17,6 @@
         $tamanhoLista = count($listaRegistros);
         $tamanhoLista++;
 
-        // Cria o objeto usando as variáveis limpas
         $registro = new registro($tamanhoLista, $titulo, $cliente, $descricao, new DateTime(), $status);
             
         $listaRegistros[] = $registro->paraArray();
