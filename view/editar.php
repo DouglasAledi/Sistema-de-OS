@@ -34,7 +34,7 @@
     <meta charset="UTF-8">
     <title>Editar Serviço</title>
     <style>
-        body { font-family: sans-serif; background-color: #f9f9f9; padding: 20px; }
+        body { font-family: sans-serif; background-color: #F4F6F9; padding: 20px; }
         .form-box { background: white; max-width: 500px; margin: 0 auto; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
         h2 { margin-top: 0; color: #333; }
         .campo { margin-bottom: 15px; }

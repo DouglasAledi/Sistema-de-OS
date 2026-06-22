@@ -1,9 +1,10 @@
         :root{
                 --cor-branca: #ffff;
+                    --cor-fundo-corpo: #f4f6f9;
         }
 
         body { 
-                font-family: sans-serif; margin: 40px; background-color: var(--cor-branca); text-align: center; padding-top: 50px; 
+                font-family: sans-serif; margin: 40px; background-color: var(--cor-fundo-corpo); text-align: center; padding-top: 50px; 
         }
 
         textarea{

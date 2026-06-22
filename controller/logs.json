@@ -1,5 +1,29 @@
 [
     {
+        "data_hora": "23\/06\/2026 01:36:52",
+        "acao": "CRIAR",
+        "servico_id": 1,
+        "detalhes": "Serviço criado com o título: 'a' para o cliente: 'a'."
+    },
+    {
+        "data_hora": "22\/06\/2026 22:55:23",
+        "acao": "EXCLUIR",
+        "servico_id": 1,
+        "detalhes": "O serviço '5' do cliente '5' foi excluído permanentemente."
+    },
+    {
+        "data_hora": "22\/06\/2026 22:55:18",
+        "acao": "EDITAR",
+        "servico_id": 1,
+        "detalhes": "O serviço foi editado. Novo título: '5' | Cliente: 5'."
+    },
+    {
+        "data_hora": "22\/06\/2026 22:55:06",
+        "acao": "CRIAR",
+        "servico_id": 1,
+        "detalhes": "Serviço criado com o título: '5' para o cliente: '5'."
+    },
+    {
         "data_hora": "22\/06\/2026 22:53:02",
         "acao": "EXCLUIR",
         "servico_id": 2,
