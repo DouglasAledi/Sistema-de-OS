@@ -1,5 +1,65 @@
 [
     {
+        "data_hora": "22\/06\/2026 22:53:02",
+        "acao": "EXCLUIR",
+        "servico_id": 2,
+        "detalhes": "O serviço 'sdd' do cliente 's' foi excluído permanentemente."
+    },
+    {
+        "data_hora": "22\/06\/2026 22:52:59",
+        "acao": "EXCLUIR",
+        "servico_id": 2,
+        "detalhes": "O serviço 'sa' do cliente 'as' foi excluído permanentemente."
+    },
+    {
+        "data_hora": "22\/06\/2026 22:42:00",
+        "acao": "CRIAR",
+        "servico_id": 2,
+        "detalhes": "Serviço criado com o título: 'sdd' para o cliente: 's'."
+    },
+    {
+        "data_hora": "22\/06\/2026 22:23:59",
+        "acao": "EXCLUIR",
+        "servico_id": 1,
+        "detalhes": "O serviço 's' do cliente 'as' foi excluído permanentemente."
+    },
+    {
+        "data_hora": "22\/06\/2026 22:04:06",
+        "acao": "CRIAR",
+        "servico_id": 2,
+        "detalhes": "Serviço criado com o título: 'sa' para o cliente: 'as'."
+    },
+    {
+        "data_hora": "22\/06\/2026 22:03:57",
+        "acao": "EDITAR",
+        "servico_id": 1,
+        "detalhes": "O serviço foi editado. Novo título: 's' | Cliente: as'."
+    },
+    {
+        "data_hora": "22\/06\/2026 22:03:53",
+        "acao": "EDITAR",
+        "servico_id": 1,
+        "detalhes": "O serviço foi editado. Novo título: 's' | Cliente: as'."
+    },
+    {
+        "data_hora": "22\/06\/2026 22:00:05",
+        "acao": "CRIAR",
+        "servico_id": 1,
+        "detalhes": "Serviço criado com o título: 's' para o cliente: 'as'."
+    },
+    {
+        "data_hora": "22\/06\/2026 22:00:00",
+        "acao": "EXCLUIR",
+        "servico_id": 2,
+        "detalhes": "O serviço 'x' do cliente 'c' foi excluído permanentemente."
+    },
+    {
+        "data_hora": "22\/06\/2026 21:59:57",
+        "acao": "EXCLUIR",
+        "servico_id": 1,
+        "detalhes": "O serviço 'aaa' do cliente 'aaa' foi excluído permanentemente."
+    },
+    {
         "data_hora": "20\/06\/2026 01:31:06",
         "acao": "CRIAR",
         "servico_id": 2,

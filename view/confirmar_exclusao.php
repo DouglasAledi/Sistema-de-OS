@@ -34,12 +34,12 @@
 
     <div class="conteudo_tela_exclusao">
         <h2>Confirmar Exclusão</h2>
-        <p>Você tem certeza que deseja excluir o serviço <strong><?= $itemParaExcluir['titulo'] ?></strong> do cliente <strong><?= $itemParaExcluir['nomeCliente'] ?></strong>?</p>
+        <p class="conteudo_tela_exclusao_texto">Você tem certeza que deseja excluir o serviço <strong><?= $itemParaExcluir['titulo'] ?></strong> do cliente <strong><?= $itemParaExcluir['nomeCliente'] ?></strong>?</p>
 
         <div class="botoes_container">
-            <a href="index.php" style="background: gray; color: white; padding: 10px; text-decoration: none;">Não, voltar</a>
+            <a href="index.php" class="botao_voltar">Não, voltar</a>
 
-            <a href="../model/deletar_registro.php?id=<?= $itemParaExcluir['id'] ?>" style="background: red; color: white; padding: 10px; text-decoration: none;">Sim, excluir</a>
+            <a href="../model/deletar_registro.php?id=<?= $itemParaExcluir['id'] ?>" class="botao_excluir">Sim, excluir</a>
         </div>
     </div>
 

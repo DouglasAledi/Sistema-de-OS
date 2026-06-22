@@ -1,18 +1,1 @@
-[
-    {
-        "id": 1,
-        "titulo": "aaa",
-        "nomeCliente": "aaa",
-        "descricao": "a",
-        "dataRegistro": "20\/06\/2026",
-        "status": "Pendente"
-    },
-    {
-        "id": 2,
-        "titulo": "x",
-        "nomeCliente": "c",
-        "descricao": "z",
-        "dataRegistro": "20\/06\/2026",
-        "status": "Pendente"
-    }
-]
+[]
