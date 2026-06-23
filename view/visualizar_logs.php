@@ -57,8 +57,8 @@
                         <?php foreach($listaLog as $log): ?>
                             <tr>
                                 <td>
-                                    <?php
-                                        htmlspecialchars($data[0] ?? '');
+                                    <?=
+                                        htmlspecialchars($log['data'] ?? '');
                                      ?>
                                 </td>
                                 <td>

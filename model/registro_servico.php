@@ -42,8 +42,8 @@
                 "titulo" => $this->titulo,
                 "nomeCliente" => $this->nomeCliente,
                 "descricao" => $this->descricao,
-                "data" => $this->pegarData(),
-                "hora" => $this->pegarHora(),
+                "data" => $this->data,
+                "hora" => $this->hora,
                 "status" => $this->pegarStatusPorExtenso()
             ];
         }

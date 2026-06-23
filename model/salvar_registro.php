@@ -9,7 +9,7 @@
         $titulo = $_POST['titulo'];
         $cliente = $_POST['cliente'];
         $descricao = $_POST['descricao'];
-        $status = $_POST['status'];
+        $status = (int)$_POST['status'];
 
         $conteudoRecebido = file_exists($caminhoJSON) ? file_get_contents($caminhoJSON) : "";
         $listaRegistros = json_decode($conteudoRecebido, true) ?? [];
@@ -20,6 +20,8 @@
         $agora = new DateTime();
         $hora = $agora->format('H:i:s');
         $data = $agora->format('d/m/Y');
+
+
 
         $registro = new registro($tamanhoLista, $titulo, $cliente, $descricao, $data, $hora, $status);
             
