@@ -142,7 +142,7 @@
                             <td><?php echo $item["id"]; ?></td>
                             <td style="font-weight: 500; color: #111827;"><?php echo htmlspecialchars($item["titulo"]); ?></td>
                             <td><?php echo htmlspecialchars($item["nomeCliente"]); ?></td>
-                            <td><?php echo $item["dataRegistro"]; ?></td>
+                            <td><?php echo $item["data"]; ?></td>
                             <td>
                                 <span class="<?php echo $classeColorida; ?>">
                                     <?php echo $item["status"]; ?>

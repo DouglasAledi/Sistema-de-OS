@@ -17,14 +17,18 @@
         $tamanhoLista = count($listaRegistros);
         $tamanhoLista++;
 
-        $registro = new registro($tamanhoLista, $titulo, $cliente, $descricao, new DateTime(), $status);
+        $agora = new DateTime();
+        $hora = $agora->format('H:i:s');
+        $data = $agora->format('d/m/Y');
+
+        $registro = new registro($tamanhoLista, $titulo, $cliente, $descricao, $data, $hora, $status);
             
         $listaRegistros[] = $registro->paraArray();
         $jsonFinal = json_encode($listaRegistros, JSON_PRETTY_PRINT);
 
         file_put_contents($caminhoJSON, $jsonFinal);
 
-        $mensagemLog = "Serviço criado com o título: '{$titulo}' para o cliente: '{$cliente}'.";
+        $mensagemLog = "Serviço criado dia: '{$data}' hora: '{$hora}' com o título: '{$titulo}' para o cliente: '{$cliente}'";
         registrarAcao("CRIAR", $tamanhoLista, $mensagemLog);
 
         header("Location: ../view/sucesso.php");

@@ -9,7 +9,8 @@ function registrarAcao(string $acao, int $servicoId, string $detalhes): void {
 
     // 2. Criar a estrutura do novo log
     $novoLog = [
-        "data_hora" => (new DateTime())->format("d/m/Y H:i:s"),
+        "data" => $data,
+        "hora" => $hora,
         "acao" => $acao, // Ex: 'CRIAR', 'EDITAR', 'EXCLUIR'
         "servico_id" => $servicoId,
         "detalhes" => $detalhes

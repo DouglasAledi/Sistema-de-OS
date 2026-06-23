@@ -5,7 +5,8 @@
             private string $titulo,
             private string $nomeCliente,
             private string $descricao,
-            private DateTime $dataRegistro,
+            private string $data,
+            private string $hora,
             private int $status){
         }
         public function pegarID():int{
@@ -20,8 +21,11 @@
         public function pegarDescricao():string{
             return $this->descricao;
         }
-        public function pegarDataFormatada():string{
-            return $this->dataRegistro->format("d/m/Y");
+        public function pegarHora():string{
+            return $this->hora;
+        }
+        public function pegarData():string{
+            return $this->data;
         }
         public function pegarStatusPorExtenso():string{
             return match($this->status){
@@ -38,7 +42,8 @@
                 "titulo" => $this->titulo,
                 "nomeCliente" => $this->nomeCliente,
                 "descricao" => $this->descricao,
-                "dataRegistro" => $this->pegarDataFormatada(),
+                "data" => $this->pegarData(),
+                "hora" => $this->pegarHora(),
                 "status" => $this->pegarStatusPorExtenso()
             ];
         }
