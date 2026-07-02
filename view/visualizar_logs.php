@@ -68,7 +68,7 @@
                                     <?= htmlspecialchars($log['acao']) ?? '' ?>
                                 </td>
                                 <td>
-                                    <?= htmlspecialchars($log['usuario']) ?? ' ' ?>
+                                    NULL
                                 </td>
                                 <td>
                                     <?= htmlspecialchars($log['detalhes']) ?? '' ?>
