@@ -134,7 +134,7 @@
 
         <div class="info-grupo">
             <div class="label">Data de Registro</div>
-            <div class="dado"><?php echo $servicoEncontrado['dataRegistro']; ?></div>
+            <div class="dado"><?php echo $servicoEncontrado['data'] . " - " . $servicoEncontrado['hora']; ?></div>
         </div>
 
         <div class="botoes">

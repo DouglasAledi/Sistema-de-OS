@@ -31,7 +31,7 @@
         file_put_contents($caminhoJSON, $jsonFinal);
 
         $mensagemLog = "Serviço criado dia: '{$data}' hora: '{$hora}' com o título: '{$titulo}' para o cliente: '{$cliente}'";
-        registrarAcao("CRIAR", $tamanhoLista, $mensagemLog);
+        registrarAcao("CRIAR", $data, $hora, $tamanhoLista, $mensagemLog);
 
         header("Location: ../view/sucesso.php");
         exit;

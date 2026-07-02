@@ -14,7 +14,7 @@
         if ($idDoItem == $item["id"]){
 
             $mensagemLog = "O serviço '{$item['titulo']}' do cliente '{$item['nomeCliente']}' foi excluído permanentemente.";
-            registrarAcao("EXCLUIR", $idDoItem, $mensagemLog);
+            registrarAcao("EXCLUIR", $item["data"], $item["hora"], $idDoItem, $mensagemLog);
 
             unset($itensDecodificados[$chave]);
             break;

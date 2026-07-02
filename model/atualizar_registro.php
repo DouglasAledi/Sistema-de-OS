@@ -24,8 +24,11 @@
                 2 => "Em andamento",
                 3 => "Finalizado",
             };
+            $data = $item["data"];
+            $hora = $item["hora"];
+
             $mensagemLog = "O serviço foi editado. Novo título: '{$titulo}' | Cliente: {$nomeCliente}'.";
-            registrarAcao("EDITAR", $id, $mensagemLog);
+            registrarAcao("EDITAR", $data, $hora, $id, $mensagemLog);
         break;
         }
     }

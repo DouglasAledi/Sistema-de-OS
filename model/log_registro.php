@@ -1,6 +1,6 @@
 <?php
 
-function registrarAcao(string $acao, int $servicoId, string $detalhes): void {
+function registrarAcao(string $data, string $hora, string $acao, int $servicoId, string $detalhes): void {
     $caminhoLog = dirname(__DIR__) . "/controller/logs.json";
 
     $conteudoJson = file_exists($caminhoLog) ? file_get_contents($caminhoLog) : "";
