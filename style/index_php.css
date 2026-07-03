@@ -1,0 +1,224 @@
+
+:root{
+        --cor-branca: #ffff;
+        --cor-cinza: #333;
+        --cor-azul-escuro: #172554;
+        --cor-azul-claro: #93c5fd;
+        --cor-azul-claro-linha: #3b82f6;
+        --cor-azul-escuro-background: #1e3a8a;
+        --cor-branco-papel: #e5e7eb;
+}
+        
+        /* Reset básico e cor de fundo global da maquete */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: var(--cor-branca); 
+            color: var(--cor-cinza); 
+        }
+        
+        nav {
+            background-color: var(--cor-azul-escuro); 
+            padding: 0 40px; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+            width: 100%;
+        }
+
+        nav .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--cor-branca);
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Links centrais do Menu */
+        nav ul {
+            list-style: none;
+            display: flex;
+            height: 100%;
+            align-items: center;
+        }
+
+        nav ul li {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li a {
+            color: var(--cor-azul-claro); 
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 0 20px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            transition: all 0.2s ease;
+        }
+
+        nav ul li a:hover, nav ul li a.ativo {
+            color: var(--cor-branca);
+            background-color: var(--cor-azul-escuro-background); 
+            border-bottom: 3px solid var(--cor-azul-claro-linha); 
+        }
+
+        .nav-usuario {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--cor-branca);
+            font-size: 14px;
+        }
+
+        .nav-usuario img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--cor-azul-claro);
+        }
+
+        .painel-container { 
+            display: flex; 
+            gap: 25px; 
+            max-width: 1400px; 
+            margin: 40px auto; 
+            padding: 0 20px;
+            align-items: flex-start; 
+        }
+        
+        .coluna-esquerda { 
+            width: 280px; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 20px; 
+            flex-shrink: 0; 
+        }
+        
+        .card-lateral { 
+            background-color: var(--cor-branca); 
+            color: var(--cor-azul-escuro); 
+            padding: 20px; 
+            border-radius: 12px; 
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            border: 1px solid var(--cor-branco-papel);
+        }
+
+        .card-lateral h3 { 
+            font-size: 13px; 
+            color: #4b5563; 
+            margin-bottom: 10px; 
+            font-weight: 600;
+        }
+
+        .card-lateral .titulo-recente { 
+            font-size: 15px; 
+            font-weight: bold; 
+            color: #111827;
+            margin-bottom: 4px;
+        }
+
+        .card-lateral .cliente-recente { 
+            font-size: 13px; 
+            color: #6b7280; 
+        }
+
+        .card-lateral .numero-grande { 
+            font-size: 32px; 
+            font-weight: 700; 
+            color: #111827;
+            margin-top: 5px; 
+        }
+
+        .card-lateral .sub-info { 
+            font-size: 12px; 
+            color: #6b7280; 
+            margin-top: 12px; 
+            display: flex; 
+            flex-direction: column;
+            gap: 4px;
+            border-top: 1px solid var(--cor-branca);
+            padding-top: 8px;
+        }
+
+        .coluna-direita { 
+            flex: 1; 
+            background: var(--cor-branca); 
+            padding: 30px; 
+            border-radius: 12px; 
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05); 
+            border: 1px solid var(--cor-branca);
+        }
+
+        h1 { 
+            font-size: 24px; color: #111827; margin-bottom: 2px; 
+        }
+        
+        h2 { 
+            font-size: 14px; color: #6b7280; font-weight: normal; margin-bottom: 25px; 
+        }
+        
+        table { 
+            width: 100%; border-collapse: collapse; margin-top: 15px; 
+        }
+
+        th, td { 
+            padding: 14px 16px; text-align: left; font-size: 14px; 
+        }
+        
+        th { 
+            background-color: var(--cor-branca-papel); color: #374151; font-weight: 600; border-bottom: 2px solid var(--cor-branca-papel); 
+        }
+
+        td { 
+            border-bottom: 1px solid var(--cor-branca-papel); color: #4b5563; 
+        }
+
+        tr:hover td { 
+            background-color: var(--cor-branca-papel); 
+        }
+        
+        .btn-novo {
+            background-color: #2563eb; 
+            color: var(--cor-branca); 
+            padding: 10px 16px; 
+            text-decoration: none; 
+            border-radius: 6px; 
+            font-weight: 600; 
+            display: inline-block; 
+            font-size: 13px;
+            transition: background 0.2s;
+        }
+        .btn-novo:hover { 
+            background-color: var(--cor-azul-escuro-background); 
+        }
+
+        .acao-link { 
+            text-decoration: none; font-weight: 600; font-size: 13px; margin-right: 12px; 
+        }
+
+        .laranja { 
+            background-color: #fef3c7; color: #d97706; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 500; 
+        }
+
+        .amarelo { 
+            background-color: #e0f2fe; color: #0284c7; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 500; 
+        }
+
+        .verde   { 
+            background-color: #dcfce7; color: #16a34a; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 500; 
+        }
+
+        .vermelho { 
+            background-color: #fee2e2; color: #dc2626; padding: 4px 10px; border-radius: 12px; font-size: 12px; font-weight: 500; 
+        }
