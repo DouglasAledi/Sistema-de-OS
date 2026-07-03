@@ -1,39 +1,40 @@
 <?php
-    require __DIR__ . "/registro_servico.php";
-    require __DIR__ . "/log_registro.php";
+require __DIR__ . "/registro_servico.php";
+require __DIR__ . "/log_registro.php";
 
-    $caminhoJSON = dirname(__DIR__) . "/controller/registros.json";
+$caminhoJSON = dirname(__DIR__) . "/controller/registros.json";
 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-        $titulo = $_POST['titulo'];
-        $cliente = $_POST['cliente'];
-        $descricao = $_POST['descricao'];
-        $status = (int)$_POST['status'];
+    $titulo = $_POST['titulo'];
+    $cliente = $_POST['cliente'];
+    $descricao = $_POST['descricao'];
+    $status = (int)$_POST['status'];
 
-        $conteudoRecebido = file_exists($caminhoJSON) ? file_get_contents($caminhoJSON) : "";
-        $listaRegistros = json_decode($conteudoRecebido, true) ?? [];
+    $conteudoRecebido = file_exists($caminhoJSON) ? file_get_contents($caminhoJSON) : "";
+    $listaRegistros = json_decode($conteudoRecebido, true) ?? [];
 
-        $tamanhoLista = count($listaRegistros);
-        $tamanhoLista++;
+    $tamanhoLista = count($listaRegistros);
+    $tamanhoLista++;
 
-        $agora = new DateTime();
-        $hora = $agora->format('H:i:s');
-        $data = $agora->format('d/m/Y');
+    date_default_timezone_set('America/Sao_Paulo');
+
+    $agora = new DateTime('now');
+    $hora = $agora->format('H:i:s');
+    $data = $agora->format('d/m/Y');
 
 
 
-        $registro = new registro($tamanhoLista, $titulo, $cliente, $descricao, $data, $hora, $status);
-            
-        $listaRegistros[] = $registro->paraArray();
-        $jsonFinal = json_encode($listaRegistros, JSON_PRETTY_PRINT);
+    $registro = new registro($tamanhoLista, $titulo, $cliente, $descricao, $data, $hora, $status);
 
-        file_put_contents($caminhoJSON, $jsonFinal);
+    $listaRegistros[] = $registro->paraArray();
+    $jsonFinal = json_encode($listaRegistros, JSON_PRETTY_PRINT);
 
-        $mensagemLog = "Serviço criado dia: '{$data}' hora: '{$hora}' com o título: '{$titulo}' para o cliente: '{$cliente}'";
-        registrarAcao("CRIAR", $data, $hora, $tamanhoLista, $mensagemLog);
+    file_put_contents($caminhoJSON, $jsonFinal);
 
-        header("Location: ../view/sucesso.php");
-        exit;
-    }
-?>
+    $mensagemLog = "Serviço criado dia: '{$data}' hora: '{$hora}' com o título: '{$titulo}' para o cliente: '{$cliente}'";
+    registrarAcao($data, $hora, "CRIAR", $tamanhoLista, $mensagemLog);
+
+    header("Location: ../view/sucesso.php");
+    exit;
+}

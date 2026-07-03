@@ -1,57 +1,54 @@
 <?php
 
-    require __DIR__ . "/../model/salvar_registro.php";
+require dirname(__DIR__) . "/model/salvar_registro.php";
 
-    $caminhoJSON = dirname(__DIR__) . "/controller/registros.json";
-    
+$caminhoJSON = dirname(__DIR__) . "/controller/registros.json";
 
-    // 1. Carrega os dados do arquivo JSON
-    $conteudoJson = file_exists($caminhoJSON) ? file_get_contents($caminhoJSON) : "";
-    $listaRegistro = json_decode($conteudoJson, true) ?? [];
 
-    // 2. Descobre o serviço mais recente (primeiro item da lista)
-    $ultimoServico = $listaRegistro[0] ?? null;
+$conteudoJson = file_exists($caminhoJSON) ? file_get_contents($caminhoJSON) : "";
+$listaRegistro = json_decode($conteudoJson, true) ?? [];
 
-    // 3. Inicializa os contadores zerados
-    $totalClientesAtivos = 0;
-    $pendentes = 0;
-    $emAndamento = 0;
-    $finalizados = 0;
-    $clientesContados = [];
+$ultimoServico = $listaRegistro[0] ?? null;
 
-    // 4. Passa pelos registros somando as estatísticas
-    foreach ($listaRegistro as $item) {
-        if ($item['status'] === 'Pendente') {
-            $pendentes++;
-        } elseif ($item['status'] === 'Em andamento') {
-            $emAndamento++;
-        } elseif ($item['status'] === 'Finalizado') {
-            $finalizados++;
-        }
+$totalClientesAtivos = 0;
+$pendentes = 0;
+$emAndamento = 0;
+$finalizados = 0;
+$clientesContados = [];
 
-        if (!empty($item['nomeCliente']) && !in_array($item['nomeCliente'], $clientesContados)){
-            $clientesContados[] = $item['nomeCliente'];
-        }
+foreach ($listaRegistro as $item) {
+    if ($item['status'] === 'Pendente') {
+        $pendentes++;
+    } elseif ($item['status'] === 'Em andamento') {
+        $emAndamento++;
+    } elseif ($item['status'] === 'Finalizado') {
+        $finalizados++;
     }
-    
-    // 5. Define o total final de clientes únicos ativos
-    $totalClientesAtivos = count($clientesContados);
+
+    if (!empty($item['nomeCliente']) && !in_array($item['nomeCliente'], $clientesContados)) {
+        $clientesContados[] = $item['nomeCliente'];
+    }
+}
+
+$totalClientesAtivos = count($clientesContados);
 
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Painel de Registros</title>
     <link rel="stylesheet" href="../style/index_php.css">
 </head>
+
 <body>
 
     <nav>
         <a href="index.php" class="logo-area">
             🛠️ C.D.R Serviços
         </a>
-        
+
         <ul>
             <li><a href="index.php" class="ativo">Home</a></li>
             <li><a href="index.php">Registros</a></li>
@@ -67,9 +64,9 @@
     </nav>
 
     <div class="painel-container">
-        
+
         <aside class="coluna-esquerda">
-            
+
             <div class="card-lateral">
                 <h3>Serviços Recentes</h3>
                 <?php if ($ultimoServico): ?>
@@ -99,7 +96,7 @@
         <main class="coluna-direita">
             <h1>Dashboard</h1>
             <h2>Lista de Serviços</h2>
-            
+
             <div style="margin-bottom: 20px; text-align: right;">
                 <a href="cadastrar_html.php" class="btn-novo">
                     + NOVO REGISTRO DE SERVIÇO
@@ -118,24 +115,24 @@
                     </tr>
                 </thead>
                 <tbody>
-                
+
                     <?php foreach ($listaRegistro as $item): ?>
 
                         <?php
-                            switch ($item["status"]) {
-                                case "Pendente":
-                                    $classeColorida = "laranja";
-                                    break;
-                                case "Em andamento":
-                                    $classeColorida = "amarelo";
-                                    break;
-                                case "Finalizado":
-                                    $classeColorida = "verde";
-                                    break;
-                                default:
-                                    $classeColorida = "vermelho";
-                                    break;
-                            }
+                        switch ($item["status"]) {
+                            case "Pendente":
+                                $classeColorida = "laranja";
+                                break;
+                            case "Em andamento":
+                                $classeColorida = "amarelo";
+                                break;
+                            case "Finalizado":
+                                $classeColorida = "verde";
+                                break;
+                            default:
+                                $classeColorida = "vermelho";
+                                break;
+                        }
                         ?>
 
                         <tr>
@@ -155,7 +152,7 @@
                             </td>
                         </tr>
                     <?php endforeach ?>
-                
+
                 </tbody>
             </table>
         </main>
@@ -163,4 +160,5 @@
     </div>
 
 </body>
+
 </html>
