@@ -28,7 +28,7 @@ foreach ($listaRegistro as $chave => $item) {
         $hora = $item["hora"];
 
         $mensagemLog = "O serviço foi editado. Novo título: '{$titulo}' | Cliente: {$nomeCliente}'.";
-        registrarAcao("EDITAR", $data, $hora, $id, $mensagemLog);
+        registrarAcao($data, $hora, "EDITAR", $id, $mensagemLog);
         break;
     }
 }

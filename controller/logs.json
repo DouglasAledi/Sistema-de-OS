@@ -1,6 +1,48 @@
 [
     {
         "data": "03\/07\/2026",
+        "hora": "21:12:25",
+        "acao": "EXCLUIR",
+        "servico_id": 1,
+        "detalhes": "O serviço 'd' do cliente 'm' foi excluído permanentemente."
+    },
+    {
+        "data": "03\/07\/2026",
+        "hora": "21:12:25",
+        "acao": "EDITAR",
+        "servico_id": 1,
+        "detalhes": "O serviço foi editado. Novo título: 'd' | Cliente: m'."
+    },
+    {
+        "data": "03\/07\/2026",
+        "hora": "21:12:25",
+        "acao": "CRIAR",
+        "servico_id": 1,
+        "detalhes": "Serviço criado dia: '03\/07\/2026' hora: '21:12:25' com o título: 'd' para o cliente: 'm'"
+    },
+    {
+        "data": "EXCLUIR",
+        "hora": "03\/07\/2026",
+        "acao": "20:56:07",
+        "servico_id": 1,
+        "detalhes": "O serviço 'f' do cliente 'kffdfd' foi excluído permanentemente."
+    },
+    {
+        "data": "03\/07\/2026",
+        "hora": "20:56:07",
+        "acao": "EDITAR",
+        "servico_id": 1,
+        "detalhes": "O serviço foi editado. Novo título: 'f' | Cliente: kffdfd'."
+    },
+    {
+        "data": "EDITAR",
+        "hora": "03\/07\/2026",
+        "acao": "20:56:07",
+        "servico_id": 1,
+        "detalhes": "O serviço foi editado. Novo título: 'f' | Cliente: kffdfd'."
+    },
+    {
+        "data": "03\/07\/2026",
         "hora": "20:56:07",
         "acao": "CRIAR",
         "servico_id": 1,

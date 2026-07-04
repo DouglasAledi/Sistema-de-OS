@@ -1,29 +1,27 @@
 <?php
 
-    require __DIR__ . "/log_registro.php";
+require __DIR__ . "/log_registro.php";
 
-    $caminhoJSON = dirname(__DIR__) . "/controller/registros.json";
+$caminhoJSON = dirname(__DIR__) . "/controller/registros.json";
 
-    $conteudoJson = file_exists($caminhoJSON) ? file_get_contents($caminhoJSON) : "";
+$conteudoJson = file_exists($caminhoJSON) ? file_get_contents($caminhoJSON) : "";
 
-    $idDoItem = (int)$_GET["id"];
+$idDoItem = (int)$_GET["id"];
 
-    $itensDecodificados = json_decode($conteudoJson, true) ?? [];
+$itensDecodificados = json_decode($conteudoJson, true) ?? [];
 
-    foreach ($itensDecodificados as $chave => $item) {
-        if ($idDoItem == $item["id"]){
+foreach ($itensDecodificados as $chave => $item) {
+    if ($idDoItem == $item["id"]) {
 
-            $mensagemLog = "O serviço '{$item['titulo']}' do cliente '{$item['nomeCliente']}' foi excluído permanentemente.";
-            registrarAcao("EXCLUIR", $item["data"], $item["hora"], $idDoItem, $mensagemLog);
+        $mensagemLog = "O serviço '{$item['titulo']}' do cliente '{$item['nomeCliente']}' foi excluído permanentemente.";
+        registrarAcao($item["data"], $item["hora"], "EXCLUIR", $idDoItem, $mensagemLog);
 
-            unset($itensDecodificados[$chave]);
-            break;
-        }
+        unset($itensDecodificados[$chave]);
+        break;
     }
-    
-    $jsonSalvo = json_encode($itensDecodificados, JSON_PRETTY_PRINT);
-    file_put_contents($caminhoJSON, $jsonSalvo);
-    header("Location: ../view/index.php");
-    exit;
+}
 
-?>
+$jsonSalvo = json_encode($itensDecodificados, JSON_PRETTY_PRINT);
+file_put_contents($caminhoJSON, $jsonSalvo);
+header("Location: ../view/index.php");
+exit;
