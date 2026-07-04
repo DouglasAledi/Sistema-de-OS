@@ -51,7 +51,6 @@ $totalClientesAtivos = count($clientesContados);
 
         <ul>
             <li><a href="index.php" class="ativo">Home</a></li>
-            <li><a href="index.php">Registros</a></li>
             <li><a href="#">Orçamentos</a></li>
             <li><a href="#">Relatórios</a></li>
             <li><a href="visualizar_logs.php">Histórico de Logs</a></li>

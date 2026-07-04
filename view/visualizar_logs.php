@@ -30,7 +30,6 @@ if (file_exists($caminhologs)) {
 
         <ul>
             <li><a href="index.php">Home</a></li>
-            <li><a href="index.php">Registros</a></li>
             <li><a href="#">Orçamentos</a></li>
             <li><a href="#">Relatórios</a></li>
             <li><a href="visualizar_logs.php" class="ativo">Histórico de Logs</a></li>
