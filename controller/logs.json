@@ -1,0 +1,44 @@
+[
+    {
+        "data": "08\/07\/2026",
+        "hora": "18:53:18",
+        "acao": "CRIAR",
+        "servico_id": 2,
+        "detalhes": "Serviço criado dia: '08\/07\/2026' hora: '18:53:18' com o título: 'f' para o cliente: 'j'"
+    },
+    {
+        "data": "08\/07\/2026",
+        "hora": "18:49:02",
+        "acao": "CRIAR",
+        "servico_id": 1,
+        "detalhes": "Serviço criado dia: '08\/07\/2026' hora: '18:49:02' com o título: 's' para o cliente: 'j'"
+    },
+    {
+        "data": "08\/07\/2026",
+        "hora": "18:46:45",
+        "acao": "EXCLUIR",
+        "servico_id": 1,
+        "detalhes": "O serviço 'jfsfsssssssssss' do cliente 'jf' foi excluído permanentemente."
+    },
+    {
+        "data": "08\/07\/2026",
+        "hora": "18:46:45",
+        "acao": "EDITAR",
+        "servico_id": 1,
+        "detalhes": "O serviço foi editado. Novo título: 'jfsfsssssssssss' | Cliente: jf'."
+    },
+    {
+        "data": "08\/07\/2026",
+        "hora": "18:46:45",
+        "acao": "EDITAR",
+        "servico_id": 1,
+        "detalhes": "O serviço foi editado. Novo título: 'j' | Cliente: jf'."
+    },
+    {
+        "data": "08\/07\/2026",
+        "hora": "18:46:45",
+        "acao": "CRIAR",
+        "servico_id": 1,
+        "detalhes": "Serviço criado dia: '08\/07\/2026' hora: '18:46:45' com o título: 'j' para o cliente: 'j'"
+    }
+]

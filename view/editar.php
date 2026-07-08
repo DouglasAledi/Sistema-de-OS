@@ -1,47 +1,25 @@
-<?php 
+<?php
 
-    if (!isset($_GET["id"])) {
-        header("Location: index.php");
-        exit;
-    }
+require dirname(__DIR__) . "/model/editar_logica.php";
 
-    $idUrl = (int)$_GET["id"];
-
-    $servicoEncontrado = null;
-
-    $caminhoJSON = dirname(__DIR__) . ("/controller/registros.json");
-
-    $conteudoJson = file_exists($caminhoJSON) ? file_get_contents($caminhoJSON) : "";
-
-    $listaRegistro = json_decode($conteudoJson, true) ?? [];
-
-    foreach ($listaRegistro as $id) {
-       if ($idUrl == $id["id"]){
-            $servicoEncontrado = $id;
-            break;
-       }
-    }
-    if (!$servicoEncontrado) {
-        header("Location: index.php");
-        exit;
-    }
-    
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Editar Serviço</title>
     <link rel="stylesheet" href="../style/editar_php.css">
 </head>
+
 <body>
 
     <div class="form-box">
         <h2>Editar Serviço #<?php echo $servicoEncontrado['id']; ?></h2>
-        
+
         <form action="../model/atualizar_registro.php" method="POST">
-            
+
             <input type="hidden" name="id" value="<?php echo $servicoEncontrado['id']; ?>">
 
             <div class="campo">
@@ -74,4 +52,5 @@
     </div>
 
 </body>
+
 </html>
