@@ -2,6 +2,20 @@
     {
         "data": "08\/07\/2026",
         "hora": "18:53:18",
+        "acao": "EDITAR",
+        "servico_id": 2,
+        "detalhes": "O serviço foi editado. Novo título: 'f' | Cliente: j'."
+    },
+    {
+        "data": "08\/07\/2026",
+        "hora": "18:49:02",
+        "acao": "EDITAR",
+        "servico_id": 1,
+        "detalhes": "O serviço foi editado. Novo título: 's' | Cliente: j'."
+    },
+    {
+        "data": "08\/07\/2026",
+        "hora": "18:53:18",
         "acao": "CRIAR",
         "servico_id": 2,
         "detalhes": "Serviço criado dia: '08\/07\/2026' hora: '18:53:18' com o título: 'f' para o cliente: 'j'"

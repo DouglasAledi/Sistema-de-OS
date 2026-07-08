@@ -6,7 +6,7 @@
         "descricao": "j",
         "data": "08\/07\/2026",
         "hora": "18:49:02",
-        "status": "Pendente"
+        "status": "Em andamento"
     },
     {
         "id": 2,
@@ -15,6 +15,6 @@
         "descricao": "n",
         "data": "08\/07\/2026",
         "hora": "18:53:18",
-        "status": "Pendente"
+        "status": "Finalizado"
     }
 ]
