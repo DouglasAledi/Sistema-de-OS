@@ -21,7 +21,7 @@ require dirname(__DIR__) . "/model/logica_visualizar_logs.php";
 
         <ul>
             <li><a href="index.php">Home</a></li>
-            <li><a href="#">Orçamentos</a></li>
+            <li><a href="orcamento.php">Orçamentos</a></li>
             <li><a href="#">Relatórios</a></li>
             <li><a href="visualizar_logs.php" class="ativo">Histórico de Logs</a></li>
         </ul>

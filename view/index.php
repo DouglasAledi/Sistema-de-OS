@@ -20,7 +20,7 @@ require dirname(__DIR__) . "/model/logica_index.php";
 
         <ul>
             <li><a href="index.php" class="ativo">Home</a></li>
-            <li><a href="#">Orçamentos</a></li>
+            <li><a href="orcamento.php">Orçamentos</a></li>
             <li><a href="#">Relatórios</a></li>
             <li><a href="visualizar_logs.php">Histórico de Logs</a></li>
         </ul>
